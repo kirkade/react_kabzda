@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 export default {
-    title: 'React.Memo demo'
+    value: 'React.Memo demo'
 }
 
 
@@ -9,7 +9,7 @@ export default {
 const NewMessagesCounter = (props: { count:number }) => {
     return <div>{props.count}</div>
 }
-type UsersType = {
+export type UsersType = {
     users:Array<string>
 }
 const UsersSecret = (props: UsersType) => {

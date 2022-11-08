@@ -3,13 +3,15 @@ import React, {useState} from 'react';
 import {SelectCustom} from "./SelectCustom";
 
 export default {
-    title: 'SelectCustom',
+    value: 'SelectCustom',
     component: SelectCustom,
 }
 
 export type ItemType = {
     id: number,
     value: string,
+    country?:string
+    population?:number
 }
 export type ItemsType = Array<ItemType>
 
